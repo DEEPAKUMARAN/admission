@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application form</title>
+    <style>
+        body {
+	margin: 20px;
+            border: 5px solid blue;	    
+        }
+	#a{
+	margin:30px;
+	border:5px solid purple;
+	border-radius:10px;
+	padding:30px;
+	background-color:pink;
+	text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+	}
+	select {
+	width:150px;
+	}
+	#myimage{
+            position: absolute;
+            top: 200px; 
+            right: 30px;
+	}
+	#position{
+            position: absolute;
+            top: 1300px; 
+            right: 60px;
+	    font-size:30px;	
+	}
+	#arrow{
+            position: absolute;
+            top: 1285px; 
+            right: 130px;
+	}
+    </style>
+</head>
+<body>
+    <center>
+        <p id="a" style="color:white; font-family:Arial; font-size:40px;"><b><u>Application Form</u></b></p>
+	<h3>(basic details)</h3>
+    </center>
+
+    <img id="myimage" src='D:\Photos\backgrounds\PicsArt_07-03-09.52.02.png' width="700" height="1000">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" size="30" placeholder="IN ALPHABETS"><br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Father's Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" size="30" placeholder="IN ALPHABETS"><br><br>
+	
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Father's Occupation</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;
+    <input type="text" size="30"><br><br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Mother's Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+    <input type="text" size="30" placeholder="IN ALPHABETS"><br><br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Mother's Occupation</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+    <input type="text" size="30"><br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;
+    <textarea rows="4" cols="50" style="height:80px;" type="text" size="40"></textarea><br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">E-mail</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="email" size="30"><br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Contact No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" size="30" placeholder="Must be Numbers"><br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Sex</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label style="font-size:20px;"><input type="radio" value="option1" name="sex">Male</label>&nbsp;&nbsp;
+    <label style="font-size:20px;"><input type="radio" value="option2" name="sex">Female</label><br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Date Of Birth</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="date"><br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Category</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select id="division">
+        <option value="oc">OC</option>
+        <option value="fc">FC</option>
+        <option value="bc">BC</option>
+        <option value="mbc">MBC</option>
+        <option value="sc">SC</option>
+    </select><br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">HSC Group</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select id="group">
+        <option value="MB">Maths Biology</option>
+        <option value="cs">Computer Science</option>
+        <option value="com">Commerce</option>
+        <option value="others">Others</option>
+    </select><br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">HSC Cutoff</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" placeholder="In Percentage(%)"><br><br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">HSC School Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" size="50"><br><br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Extracurricular<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activities</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label style="font-size:20px;"><input type="checkbox">NCC</label>&nbsp;&nbsp;&nbsp;
+    <label style="font-size:20px;"><input type="checkbox">NSS</label>&nbsp;&nbsp;&nbsp;
+    <label style="font-size:20px;"><input type="checkbox">Others</label><br><br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Department</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select id="dept">
+        <option value="cse">CSE</option>
+        <option value="it">IT</option>
+	<option value="aids">AI&DS</option>
+        <option value="ece">ECE</option>
+	<option value="eee">EEE</option>
+	<option value="mech">MECH</option>
+	<option value="civil">CIVIL</option>
+    </select><br><br>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size:20px;">Student Type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label style="font-size:20px;"><input type="radio" value="option1" name="type">Day Scholar</label>&nbsp;&nbsp;
+    <label style="font-size:20px;"><input type="radio" value="option2" name="type">Hosteller</label><br><br>
+&nbsp;&nbsp;<u>page 1 of 2</u><br><br>
+<a href="D:\projects\HTML\application2.html" id="position">Next</a>
+<img id="arrow" src='C:\Users\ELCOT\Downloads\arrow_img.png' width="100" height="50">
+</body>
+</html>

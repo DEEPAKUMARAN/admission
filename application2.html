@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application form</title>
+    <style>
+        body {
+            margin: 15px;
+	    padding: 15px;
+            border: 5px solid blue;
+        }
+	#a{
+	margin:30px;
+	border:5px solid purple;
+	border-radius:10px;
+	padding:30px;
+	background-color:pink;
+	text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+	} 
+	#preview1{
+	position:absolute;
+	left:600px;
+	top:250px;
+	}
+	#preview2{
+	position:absolute;
+	left:600px;
+	top:370px;
+	}
+	#confirm{
+	margin: 15px;
+	padding: 15px;
+        border: 5px solid black;
+	border-radius:10px;	
+	}
+    </style>
+</head>
+<body>
+    <center>
+    <p id="a" style="color:white; font-family:Arial; font-size:40px;"><b><u>Application Form</u></b></p>
+	<h3>(Detail Submission)</h3>
+    </center>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="image1" style="font-size:30px;">Select a passport size image:</label><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" id="image1" name="image1" accept="image/*" onchange="previewImage1()">
+    <br>
+    <img id="preview1" src="#" alt="Preview" style="width: 100%; max-height: 200px; display: none; width:100px; height:100px;">
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="image2" style="font-size:30px;">Select a student signature:</label><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" id="image2" name="image2" accept="image/*" onchange="previewImage2()">
+    <br>
+    <img id="preview2" src="#" alt="Preview" style="width: 100%; max-height: 200px; display: none; width:100px; height:50px"><br>
+    <h3 id="confirm"><input id="declaration" type="checkbox">I declare that i have read and filled the above information
+,so if the information given by me is incorrect,you have the right to cancel without informing me.</h3>
+	<br>
+    <center>
+    <button style="height:50px; width:100px; font-size:20px;">Submit</button>
+    </center>
+	<u>page 2 of 2</u> 
+    <script>
+        function previewImage1() {
+            const input1 = document.getElementById('image1');
+            const preview1 = document.getElementById('preview1');
+
+            const file1 = input1.files[0];
+
+            if (file1) {
+                const reader1 = new FileReader();
+
+                reader1.onload = function (e) {
+                    preview1.src = e.target.result;
+                    preview1.style.display = 'block';
+                };
+
+                reader1.readAsDataURL(file1);
+            } else {
+                preview1.src = '#';
+                preview1.style.display = 'none';
+            }
+        }
+
+        function previewImage2() {
+            const input2 = document.getElementById('image2');
+            const preview2 = document.getElementById('preview2');
+
+            const file2 = input2.files[0];
+
+            if (file2) {
+                const reader2 = new FileReader();
+
+                reader2.onload = function (e) {
+                    preview2.src = e.target.result;
+                    preview2.style.display = 'block';
+                };
+
+                reader2.readAsDataURL(file2);
+            } else {
+                preview2.src = '#';
+                preview2.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
